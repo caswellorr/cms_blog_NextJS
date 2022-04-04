@@ -11,7 +11,7 @@ function PostCard({ post }) {
       <div className='relative overflow-hidden shadow-md pb-80 mb-6'>
         <img 
           className='object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg'
-          src={post.featuredImage.url}
+          src={post.featuredImage}
           alt={post.title}
         />
       </div>
@@ -25,7 +25,7 @@ function PostCard({ post }) {
           {/* <img
             className='align-middle rounded-full'
             alt={post.author.name}
-            src={post.author.photo}
+            src={post.author.photo.url}
             height='30px'
             width='30px'
           /> */}
