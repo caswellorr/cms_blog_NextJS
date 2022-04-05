@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getPosts, getPostDetails } from '../../services';
 
-import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories } from '../../components/index';
+import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories } from '../../components';
 
 function PostDetails({ post }) {
 
