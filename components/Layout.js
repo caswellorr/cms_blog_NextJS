@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from './components';
+import { Header } from './index';
 
 function Layout({ children }) {
   return (
@@ -10,4 +10,4 @@ function Layout({ children }) {
   )
 }
 
-export default Layout
+export default Layout;
