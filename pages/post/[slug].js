@@ -2,11 +2,15 @@ import React from 'react';
 
 import { getPosts, getPostDetails } from '../../services';
 
-import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories } from '../../components';
+import { PostDetail, PostWidget, Author, Comments, CommentsForm, Categories, Loader } from '../../components';
 
 function PostDetails({ post }) {
 
-  console.log(post);
+  const router = useRouter();
+
+  if (router.isFallback) {
+    return <Loader />;
+  }
 
   return (
     <div className='container mx-auto px-10 mb-8'>
