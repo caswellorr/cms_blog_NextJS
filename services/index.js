@@ -81,7 +81,7 @@ export const getRecentPosts = async () => {
 
     query GetPostDetails() {
       posts(
-        orderBy: createdAt_ASC
+        orderBy: createdAt_DESC
         last: 3
       ) {
         title
